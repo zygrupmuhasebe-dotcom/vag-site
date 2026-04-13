@@ -1,0 +1,1 @@
+fetch('/products').then(res=>res.json()).then(data=>{const list=document.getElementById('products');data.forEach(p=>{const li=document.createElement('li');li.innerText=p.name;list.appendChild(li);});});
